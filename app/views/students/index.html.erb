@@ -15,7 +15,7 @@
     <% @students.each do |student| %>
       <tr>
         <td><%= student.name %></td>
-        <td><%= student.course_id %></td>
+        <td><%= student.course.name %></td>
         <td><%= link_to 'Show', student, :class => 'btn btn-info' %></td>
         <td><%= link_to 'Edit', edit_student_path(student), :class => 'btn btn-warning' %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %></td>
